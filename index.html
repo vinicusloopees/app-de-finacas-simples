@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Financeiro</title>
+    <!-- Inclui o arquivo de estilo externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Container para o formulário de login -->
+    <div class="login-container" id="login-container">
+        <h2>Login</h2>
+        <!-- Formulário de login -->
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Nome de Usuário" required>
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+
+    <!-- Container principal do aplicativo -->
+    <div class="container" id="app-container">
+        <header>
+            <h1>App Financeiro</h1>
+        </header>
+        <!-- Div para exibir o saldo -->
+        <div class="balance">
+            <h2>Saldo: <span id="balance-amount">0,00</span></h2>
+        </div>
+        <!-- Div para exibir a receita e despesa -->
+        <div class="income-expense">
+            <div class="box income">
+                <h3>Receita</h3>
+                <p><span id="income-amount">0,00</span></p>
+            </div>
+            <div class="box expense">
+                <h3>Despesa</h3>
+                <p><span id="expense-amount">0,00</span></p>
+            </div>
+        </div>
+        <!-- Lista de transações -->
+        <div class="transaction-list">
+            <h3>Transações</h3>
+            <ul id="transactions"></ul>
+        </div>
+        <!-- Formulário para adicionar nova transação -->
+        <div class="add-transaction">
+            <h3>Adicionar Nova Transação</h3>
+            <form id="transaction-form">
+                <input type="text" id="description" placeholder="Descrição" required>
+                <input type="number" id="amount" placeholder="Valor" required>
+                <select id="type">
+                    <option value="income">Receita</option>
+                    <option value="expense">Despesa</option>
+                </select>
+                <button type="submit">Adicionar Transação</button>
+            </form>
+        </div>
+        <!-- Div para definir o orçamento -->
+        <div class="budget">
+            <h3>Orçamento</h3>
+            <form id="budget-form">
+                <input type="number" id="budget-amount" placeholder="Valor do Orçamento" required>
+                <button type="submit">Definir Orçamento</button>
+            </form>
+            <p>Orçamento Atual: <span id="current-budget">R$ 0,00</span></p>
+        </div>
+        <!-- Div para metas de economia -->
+        <div class="savings-goal">
+            <h3>Metas de Economia</h3>
+            <form id="goal-form">
+                <input type="text" id="goal-description" placeholder="Descrição da Meta" required>
+                <input type="number" id="goal-amount" placeholder="Valor da Meta" required>
+                <button type="submit">Adicionar Meta</button>
+            </form>
+            <ul id="goals"></ul>
+            <!-- Botão para resetar os dados -->
+            <button id="reset-button">Resetar Dados</button>
+        </div>
+    </div>
+    <!-- Inclui o arquivo de script JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+/* Define a fonte e o esquema de cores padrão */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do contêiner principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo do saldo */
+.balance {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo de receita e despesa */
+.income-expense {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+/* Estilo das caixas de receita e despesa */
+.box {
+    width: 45%;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Estilo de receita */
+.income {
+    background: #d4edda;
+    color: #155724;
+}
+
+/* Estilo de despesa */
+.expense {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* Estilo da lista de transações */
+.transaction-list {
+    margin-bottom: 20px;
+}
+
+/* Estilo dos formulários */
+.add-transaction, .budget, .savings-goal {
+    margin-bottom: 20px;
+}
+
+/* Estilo dos campos de entrada nos formulários */
+form input, form select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Estilo dos botões nos formulários */
+form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilo dos botões ao passar o mouse */
+form button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilo do contêiner de login */
+.login-container {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Estilo dos campos de entrada no formulário de login */
+#login-form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: calc(100% - 22px);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Estilo do botão no formulário de login */
+#login-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo do botão ao passar o mouse no formulário de login */
+#login-form button:hover {
+    background-color: #2980b9;
+}
+
+/* Esconde o contêiner principal até que o usuário faça login */
+#app-container {
+    display: none;
+}
+
+/* Estilo do botão de resetar dados */
+#reset-button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    width: 90%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo do botão de resetar dados ao passar o mouse */
+#reset-button:hover {
+    background-color: #c0392b;
+}
