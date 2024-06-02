@@ -59,5 +59,5 @@ Se você tiver alguma dúvida ou sugestão, por favor entre em contato.
 
 Feito como um projeto de faculdade por:
 [Gabriel Peixoto](https://github.com/gabxoto) e
-[Vinicius Lopes](https://github.com/viniciusloopees).
+[Vinicius Lopes](https://github.com/vinicusloopees).
 ```
